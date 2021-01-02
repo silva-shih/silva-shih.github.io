@@ -1,0 +1,188 @@
+body{
+	width:100%;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	color: #333;
+
+	margin: 5px 0
+
+   	-webkit-box-sizing: border-box
+  	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.each-project {
+  	position: relative;
+}
+
+.page-wrapper {
+	width: 100%;
+	max-width: 740px;
+	padding:0 20px;
+	background-color: #fff;
+	margin: 50px auto;
+
+
+   	-webkit-box-sizing: border-box
+       -moz-box-sizing: border-box;
+   	        box-sizing: border-box;
+}
+
+.silva-zh{
+	font-size: 40px;
+	font-family:source-han-sans-traditional,Noto Sans TC,PingFang TC,Apple LiGothic Medium,Roboto,Microsoft JhengHei,Lucida Grande,Lucida Sans Unicode,sans-serif;
+	width:100%;
+	font-weight: 500;
+}
+
+.silva{
+	font-size: 40px;
+	font-family:Helvetica, sans-serif;
+	width:100%;
+	font-weight: 500;
+}
+
+.page-wrapper p, 
+.page-wrapper li {
+	font-weight: 300;
+	font-size: 20px;
+}
+.page-wrapper li {
+	margin-bottom: 24px;
+}
+
+.page-wrapper .intro p {
+	font-size: 20px;
+}
+
+.page-wrapper .section {
+	margin: 75px 0;
+	border-top: 1px solid #ccc;
+	padding-top: 75px;
+}
+
+.page-wrapper .section.intro {
+	margin: 15% 0 75px 0;
+}
+
+.page-wrapper .section.intro,
+.page-wrapper .section.in-touch {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.page-wrapper a {
+	color: #C84CCC;
+	text-decoration: none;
+	/*padding: 0 3px;*/
+}
+.page-wrapper a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.section-header {
+	font-family: 'Inconsolata', Georgia, serif;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.section.in-touch {
+	width:100%;
+	padding: 15px 0;
+
+	font-family: 'Inconsolata', Georgia, serif;
+	font-size: 18px;
+}
+.section.in-touch span{
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.text-wrapper a {
+	margin-left: 8px;
+	padding: 0;
+}
+
+.image-wrapper, .text-wrapper {
+	display: inline-block;
+}
+
+.other {
+	margin:100px 0 25px 0;
+	padding-bottom: 25px;
+}
+
+.contact-img {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+    vertical-align: bottom;
+
+}
+
+.tweet {
+	background-image: url('img/twitter.png');
+}
+.email {
+	background-image: url('img/mail.png');
+}
+
+.updated {
+	font-size:13px;
+	color: #ccc;
+	font-family: 'Inconsolata', Georgia, serif;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.date {
+	color: #ccc;
+	font-style: italic;
+}
+
+@media screen and (max-width: 620px) {
+	.page-wrapper {
+	    width: 100%;
+	    padding: 0 25px;
+	}
+
+	.nadja {
+    	font-size: 62px;
+	}
+
+	.intro {
+	    margin: 50px 0;
+	}
+
+	ul {
+		/*list-style:none;*/
+    	padding: 0 25px;
+	}
+
+	.in-touch {
+		margin-bottom: 50px;
+	}
+
+	.in-touch span { 
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.page-wrapper .intro p {
+		font-size: 24px;
+	}
+
+	.page-wrapper p, 
+	.page-wrapper li {
+		font-size: 18px;
+	}
+	.page-wrapper li {
+		margin-bottom: 18px;
+	}
+
+
+}
