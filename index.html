@@ -10,7 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <title>Silva Shih</title>
-    <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+    <script src='ractive.min.js'></script>
 </head>
 
 <body>
@@ -19,7 +19,9 @@
         <div class='silva'>Silva Shih</div>
         <div class='section intro'>
             <p></p>
-            <p>I'm a data editor at FTChinese.com of Financial Times based in Beijing & Taipei, where I produce and oversee data-driven stories. Previously, I worked at Taiwan's CommonWealth Magazine (天下雜誌) and studied at NYU's <a href="//journalism.nyu.edu/graduate/programs/studio-20-digital-first/" class='color-in' target="_blank">Studio 20.</a> Off the duties, I am the co-founder and co-organizer of a non-profit community <a href="http://hackshackers.taipei/" class='color-in' target='_blank'>"Hacks/Hackers Taipei"</a>.</p>
+            <p>I'm the data editor with FTChinese.com of Financial Times based in Beijing & Taipei, where I produce and oversee data-driven stories. Previously, I worked at Taiwan's CommonWealth Magazine (天下雜誌) and studied at NYU's <a href="//journalism.nyu.edu/graduate/programs/studio-20-digital-first/" class='color-in' target="_blank">Studio 20.</a></p>
+            <p>I'm particularly interested in data-driven and cross-borders stories. Topics I follow include China’s censorship, foreign policy, economic influence abroad, and Cross-Strait relations.</p>
+            <p>I taught data journalism workshop for the college/graduate students from time to time. I also co-founded and co-organize a non-profit community <a href="http://hackshackers.taipei/" class='color-in' target='_blank'>"Hacks/Hackers Taipei"</a>, where encourages techies and journos work together.</p>
             <p>Please scroll down for more.</p>
         </div>
         <div class='section in-touch'>
@@ -30,34 +32,38 @@
             </div>
         </div>
         <div class='section clips'>
-            <div class='section-header'>Selected work</div>
+
+        <div class='section-header'>Selected work:</div>
+
             <ul class='projects'></ul>
+          
             <script id='template' type='text/ractive'>
                 {{#projects: i}}
-                <li>
-                    <a href='{{link}}' target='_blank' class='color-in'>{{project}} &raquo;</a>
-                </li>
+                    <li>
+                        <a href='{{link}}' target='_blank' class='color-in'>{{project}} &raquo;</a>
+                    </li>
                 {{/projects}}
+
             </script>
         </div>
         <div class='section other'>
             <div class='section-header'>Selected Teaching & Speaking</div>
-            <p>I host a panel on how tech influence  journalism and vice versa on G0V summit 2020.
+            <p>I hosted a panel on how tech influences  journalism and vice versa on <a href="//summit.g0v.tw/2020/en" class='color-in' target='_blank'>G0V summit 2020</a>.
             </p>
             <div class='date'>(Dec 20’, Tainan, Taiwan)</div>
 
 
-            <p>I taught a 2-day summer workshop for China's promising young journalists on data journalism at Peking University Shenzhen Graduate School.
+            <p>I taught a 2-day summer workshop on #ddj at Peking University Shenzhen Graduate School for China's promising young journalists.
             </p>
             <div class='date'>(Aug 17’, Shenzhen, China)</div>
 
-            <p>I was invited to the panel of the <a href="//www.gppi.net/" class='color-in' target='_blank'>Global Public Policy Institute</a>, discussed data governance in China.
+            <p>I was the panelist for the <a href="//www.gppi.net/" class='color-in' target='_blank'>Global Public Policy Institute</a>, discussed data governance in China.
             </p>
              <div class='date'>(Sept 16’, Beijing, China)</div>
-            <p>I was the speaker and the panelist on the China Data Journalism Forum (Chinese version of NICAR), sharing how to do data journalism in China.
+            <p>I was the speaker and the panelist on the China Data Journalism Forum (Chinese version of NICAR), shared how to do data journalism in China.
                 <a href="//silva-shih.github.io/nicar-china/" class='color-in' target='_blank'> [slides]</a></p>
             <div class='date'>(Jul 16’, Beijing, China)</div>
-            <p>I taught the data journalism workshop for the graduate level at Hong Kong Baptist University.<a href="//silva-shih.github.io/HKBU/" class='color-in' target='_blank'> [slides]</a></p>
+            <p>I taught the data journalism workshop for the graduate students at Hong Kong Baptist University.<a href="//silva-shih.github.io/HKBU/" class='color-in' target='_blank'> [slides]</a></p>
              <div class='date'>(May 16’, Hong Kong)</div>
             <p>I also the taught data journalism and digital journalism classes at Taiwan's National Chengchi University.</p>
              <div class='date'>(2014～2015, Taipei, Taiwan)</div>
@@ -66,31 +72,43 @@
             <div class='section-header'>Other</div>
              <p>I was one of the final judge for Taiwan's <a href="https://grants.g0v.tw/" class='color-in' target='_blank'>Civic Tech Grants</a> (2017 Fall term). </p>
 
-            <p>Co-founded<a href="//hackshakcers.taipei/" class='color-in' target='_blank'> Hacks/Hackers Taipei</a>, a local chapter of the international grassroots journalism organization. Host workshops and hackathons for local journalists and technologists. </p>
-            <p>Hosted the very first <a href="//dbootcamp.taipei/en/" class='color-in' target='_blank'>data bootcamp</a>  in Taiwan in partnership with the World Bank. </p>
+            <p>I co-founded<a href="//hackshakcers.taipei/" class='color-in' target='_blank'> Hacks/Hackers Taipei</a>, a local chapter of the international grassroots journalism organization. Host workshops and hackathons for local journalists and technologists. </p>
+            <p>I was part of a team hosted the very first <a href="//dbootcamp.taipei/en/" class='color-in' target='_blank'>data bootcamp</a>  in Taiwan in partnership with the World Bank. </p>
         </div>
         <div class='section other'>
             <div class='section-header'>Bonus</div>
             <p>View my <a href="https://docs.google.com/document/d/1C28EIOv8lAVHCbCDliUgufIgCDjGM7zPgcYJqoeXn-Y" class='color-in' target='_blank'>CV.</a></p>
-            <p>Follow us on<a href="//github.com/hackshackerstaipei/newsletter" class='color-in' target='_blank'>Hacks/Hackers Taipei</a> facebook group .</p>
+            <p>Follow us on<a href="https://www.facebook.com/groups/hackshackerstaipei" class='color-in' target='_blank'>Hacks/Hackers Taipei</a> facebook group .</p>
         </div>
         <div class='updated'>Updated on Jan. 02, 2021.</div>
     </div>
     <script>
     var projects = [{
-        'project': 'What Trump Says About China On Twitter?',
+        'project': 'Year in Review 2020: China（graphic)',
+        'link': 'https://www.ftchinese.com/story/001090677'
+    }, {
+        'project': 'Lee Teng-hui, Taiwan President, 1923-2020（obituary)',
+        'link': 'https://www.ftchinese.com/story/001088772'
+    }, {
+        'project': 'Pandemic in China has not yet reached a turning point（graphic)',
+        'link': 'https://www.ftchinese.com/story/001086291?archive'
+    }, {
+        'project': 'Taiwan 2020 presidential election: 4 things to watch（article)',
+        'link': 'https://www.ftchinese.com/story/001085833'
+    }, {
+        'project': 'What Trump Says About China On Twitter （graphic).',
         'link': 'http://www.ftchinese.com/story/001071427'
     }, {
-        'project': 'A Completed Guide On Restrictions Changes of China\'s Recent National Events',
+        'project': 'A Completed Guide On Restrictions Changes of China\'s Recent National Events（graphic)',
         'link': 'http://www.ftchinese.com/story/001069235'
     }, {
-        'project': 'Explained: Can \"Red Alert\" Saves Beijing\'s Air?',
+        'project': 'Explained:\"Red Alert\" Saves Beijing\'s Air?（graphic)',
         'link': 'http://www.ftchinese.com/story/001065229'
     }, {
-        'project': 'Explained: How To Read China\'s GDP.',
+        'project': 'Explained: How To Read China\'s GDP （graphic)',
         'link': 'http://www.ftchinese.com/interactive/5775'
     }, {
-        'project': 'How Taiwan\'s KMT Lost The Presidential Election.',
+        'project': 'How Taiwan\'s KMT Lost the 2016 Presidential Election.',
         'link': 'http://www.ftchinese.com/interactive/5986'
     }];
 
