@@ -1,6 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head></head>
-<body>hello world!</body>
-</html>
+<head>
+    <meta charset="utf-8">
+    <meta name="Silva Shih" CONTENT="Silva Shih">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <title>Silva Shih</title>
+    <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+</head>
+
+<body>
+    <div class='page-wrapper'>
+        <div class='silva-zh'>史書華</div>
+        <div class='silva'>Silva Shih</div>
+        <div class='section intro'>
+            <p></p>
+            <p>I'm a data editor at FTChinese.com of Financial Times based in Beijing & Taipei, where I produce and oversee data-driven stories. Previously, I worked at Taiwan's CommonWealth Magazine (天下雜誌) and studied at NYU's <a href="//journalism.nyu.edu/graduate/programs/studio-20-digital-first/" class='color-in' target="_blank">Studio 20.</a> Off the duties, I am the co-founder and co-organizer of a non-profit community <a href="http://hackshackers.taipei/" class='color-in' target='_blank'>"Hacks/Hackers Taipei"</a>.</p>
+            <p>Please scroll down for more.</p>
+        </div>
+        <div class='section in-touch'>
+            <div class='text-wrapper'>
+                Contact me via
+                <div class='contact-img email'></div><a href='mailto:silvashih@gmail.com' class='color-in' target='_blank'>Email</a> or
+                <div class='contact-img tweet'></div><a href='http://www.twitter.com/silvashih' class='color-in' target='_blank'>Tweet</a>
+            </div>
+        </div>
+        <div class='section clips'>
+            <div class='section-header'>Selected work</div>
+            <ul class='projects'></ul>
+            <script id='template' type='text/ractive'>
+                {{#projects: i}}
+                <li>
+                    <a href='{{link}}' target='_blank' class='color-in'>{{project}} &raquo;</a>
+                </li>
+                {{/projects}}
+            </script>
+        </div>
+        <div class='section other'>
+            <div class='section-header'>Selected Teaching & Speaking</div>
+            <p>I host a panel on how tech influence  journalism and vice versa on G0V summit 2020.
+            </p>
+            <div class='date'>(Dec 20’, Tainan, Taiwan)</div>
+
+
+            <p>I taught a 2-day summer workshop for China's promising young journalists on data journalism at Peking University Shenzhen Graduate School.
+            </p>
+            <div class='date'>(Aug 17’, Shenzhen, China)</div>
+
+            <p>I was invited to the panel of the <a href="//www.gppi.net/" class='color-in' target='_blank'>Global Public Policy Institute</a>, discussed data governance in China.
+            </p>
+             <div class='date'>(Sept 16’, Beijing, China)</div>
+            <p>I was the speaker and the panelist on the China Data Journalism Forum (Chinese version of NICAR), sharing how to do data journalism in China.
+                <a href="//silva-shih.github.io/nicar-china/" class='color-in' target='_blank'> [slides]</a></p>
+            <div class='date'>(Jul 16’, Beijing, China)</div>
+            <p>I taught the data journalism workshop for the graduate level at Hong Kong Baptist University.<a href="//silva-shih.github.io/HKBU/" class='color-in' target='_blank'> [slides]</a></p>
+             <div class='date'>(May 16’, Hong Kong)</div>
+            <p>I also the taught data journalism and digital journalism classes at Taiwan's National Chengchi University.</p>
+             <div class='date'>(2014～2015, Taipei, Taiwan)</div>
+        </div>
+        <div class='section other'>
+            <div class='section-header'>Other</div>
+             <p>I was one of the final judge for Taiwan's <a href="https://grants.g0v.tw/" class='color-in' target='_blank'>Civic Tech Grants</a> (2017 Fall term). </p>
+
+            <p>Co-founded<a href="//hackshakcers.taipei/" class='color-in' target='_blank'> Hacks/Hackers Taipei</a>, a local chapter of the international grassroots journalism organization. Host workshops and hackathons for local journalists and technologists. </p>
+            <p>Hosted the very first <a href="//dbootcamp.taipei/en/" class='color-in' target='_blank'>data bootcamp</a>  in Taiwan in partnership with the World Bank. </p>
+        </div>
+        <div class='section other'>
+            <div class='section-header'>Bonus</div>
+            <p>View my <a href="https://docs.google.com/document/d/1C28EIOv8lAVHCbCDliUgufIgCDjGM7zPgcYJqoeXn-Y" class='color-in' target='_blank'>CV.</a></p>
+            <p>Follow us on<a href="//github.com/hackshackerstaipei/newsletter" class='color-in' target='_blank'>Hacks/Hackers Taipei</a> facebook group .</p>
+        </div>
+        <div class='updated'>Updated on Jan. 02, 2021.</div>
+    </div>
+    <script>
+    var projects = [{
+        'project': 'What Trump Says About China On Twitter?',
+        'link': 'http://www.ftchinese.com/story/001071427'
+    }, {
+        'project': 'A Completed Guide On Restrictions Changes of China\'s Recent National Events',
+        'link': 'http://www.ftchinese.com/story/001069235'
+    }, {
+        'project': 'Explained: Can \"Red Alert\" Saves Beijing\'s Air?',
+        'link': 'http://www.ftchinese.com/story/001065229'
+    }, {
+        'project': 'Explained: How To Read China\'s GDP.',
+        'link': 'http://www.ftchinese.com/interactive/5775'
+    }, {
+        'project': 'How Taiwan\'s KMT Lost The Presidential Election.',
+        'link': 'http://www.ftchinese.com/interactive/5986'
+    }];
+
+    // load template
+    var ractive = new Ractive({
+        el: '.projects',
+        template: '#template',
+        data: {
+            projects
+        }
+    });
+
+
+    // change colors!
+
+    var originalColors = ['4DD198', '4FAAC8', 'EF5888', '8A58D0', 'FFA600', 'C84CCC'];
+
+    // get random color from colors array
+    function getRandom(randomize) {
+        return Math.floor(Math.random() * randomize.length);
+    };
+
+    var nodes = document.querySelectorAll('.color-in');
+
+    // retrieve
+    var lastSeenColor = localStorage.getItem("lastSeenColor");
+    var color = '';
+
+    // if new
+    if (lastSeenColor === null) {
+
+        // assign color
+        color = originalColors[getRandom(originalColors)];
+
+        // store
+        localStorage.setItem("lastSeenColor", originalColors.indexOf(color));
+
+    } // if not new
+    else {
+        // make copy
+        var colors = originalColors.slice();
+        //remove current color
+        colors.splice(+lastSeenColor, 1);
+
+        // assign color
+        color = colors[getRandom(colors)];
+
+        // store
+        localStorage.setItem("lastSeenColor", originalColors.indexOf(color));
+    }
+
+    // set styles
+    for (var i = 0; i < nodes.length; i++) {
+        nodes[i].style.color = '#' + color;
+    }
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-97175236-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
