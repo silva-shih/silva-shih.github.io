@@ -125,10 +125,10 @@ body{
 }
 
 .tweet {
-	background-image: url('img/twitter.png');
+	background-image: url('twitter.png');
 }
 .email {
-	background-image: url('img/mail.png');
+	background-image: url('mail.png');
 }
 
 .updated {
